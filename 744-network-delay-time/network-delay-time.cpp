@@ -48,7 +48,7 @@ public:
 
                 pair<int,int> nb=adj[minvertex][i];
 
-                if(visited[nb.first]==false && dis[minvertex] != INT_MAX && dis[nb.first]>dis[minvertex]+adj[minvertex][i].second){
+                if( dis[minvertex] != INT_MAX && dis[nb.first]>dis[minvertex]+adj[minvertex][i].second){
 
                     dis[nb.first]=dis[minvertex]+adj[minvertex][i].second;
                 }
